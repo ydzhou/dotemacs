@@ -1,4 +1,5 @@
 (use-package lsp-ui :ensure t :commands lsp-ui-mode)
+(use-package lsp-treemacs :ensure t :custom (lsp-treemacs-sync-mode 1))
 
 (use-package lsp-pyright :ensure t)
 
