@@ -25,7 +25,7 @@
   (defconst font-minor-height 'unspecified))
 
 (when (eq system-type 'gnu/linux)
-  (defconst fixed-pitch-font "mplus Nerd Font" )
+  (defconst fixed-pitch-font "DejaVu Sans Mono" )
   (defconst variable-pitch-font "Noto Sans")
   (defconst cjk-font "LXGW WenKai Mono")
   (defconst font-height 140)
