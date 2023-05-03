@@ -16,9 +16,7 @@
 (require 'menu-init)
 (require 'toolbar-init)
 
-;(require 'splash-init)
 (require 'basic-init)
-
 (require 'treemacs-init)
 (require 'flycheck-init)
 ;(require 'treesit-init)
