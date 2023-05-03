@@ -18,7 +18,9 @@
             '("Consult Find File" . consult-find))
 
 ;; Show imenu in menu bar
-(add-hook 'prog-mode-hook 'imenu-add-menubar-index)
+(defun custom-menubar--add-imenu ()
+  (condition-case nil (imenu-add-menubar-index) (error nil)))
+(add-hook 'prog-mode-hook 'custom-menubar--add-imenu)
 
 (setq menu-bar-final-items '(help-menu))
 
