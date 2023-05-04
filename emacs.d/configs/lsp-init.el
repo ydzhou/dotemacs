@@ -27,6 +27,7 @@
   (go-mode . lsp-deferred)
   (python-mode . lsp-deferred)
   (terraform-mode . lsp-deferred)
+  (typescript-mode . lsp-deferred)
   ;(c++-mode . 'lsp-deferred)
   ;(c-mode . lsp-deferred)
   )

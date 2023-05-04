@@ -21,4 +21,8 @@
 
 (use-package protobuf-mode :ensure t)
 
+(use-package typescript-mode
+  :ensure t
+  :custom (typescript-indent-level 2))
+
 (provide 'lang-init)
