@@ -6,6 +6,8 @@
             '("Find Implementation" . lsp-find-implementation))
 (define-key prog-mode-map [menu-bar lsp find-definition]
             '("Find Definition" . lsp-find-definition))
+(define-key prog-mode-map [menu-bar lsp list-all-errors]
+            '("List Errors" . lsp-treemacs-errors-list))
 
 (define-key global-map [menu-bar tools separator-consult] menu-bar-separator)
 (define-key global-map [menu-bar tools consult-grep]
