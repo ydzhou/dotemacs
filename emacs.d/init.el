@@ -51,6 +51,10 @@
         ("C-c p" . projectile-command-map))
   )
 
+(use-package ement
+  :ensure t
+  :custom (ement-notify-notification-predicates 'ement-notify--event-mentions-session-user-p))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
