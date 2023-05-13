@@ -19,11 +19,6 @@
 (define-key global-map [menu-bar tools consult-find]
             '("Consult Find File" . consult-find))
 
-;; Show imenu in menu bar
-(defun custom-menubar--add-imenu ()
-  (condition-case nil (imenu-add-menubar-index) (error nil)))
-(add-hook 'prog-mode-hook 'custom-menubar--add-imenu)
-
 (setq menu-bar-final-items '(help-menu))
 
 (provide 'menu-init)
