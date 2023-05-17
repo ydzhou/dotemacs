@@ -6,13 +6,14 @@
   (exec-path-from-shell-initialize))
 
 (use-package recentf
-  :init
+  :config
   (setq
     recentf-save-file "~/.emacs.d/var/recentf"
     recentf-max-saved-items 100
     recentf-max-menu-items 50)
   (recentf-mode 1)
-  (run-at-time nil (* 5 60) 'recentf-save-list))
+  ;;(run-at-time nil (* 5 60) 'recentf-save-list)
+  )
 
 (use-package projectile
   :ensure t

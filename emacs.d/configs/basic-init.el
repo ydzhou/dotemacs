@@ -6,8 +6,8 @@
 (setq inhibit-startup-screen t)
 
 ;; Display line number
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(setq-default display-line-numbers-width 4)
+;;(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+;;(setq-default display-line-numbers-width 4)
 
 ;; Display line and colume number in mode line
 (line-number-mode 1)
@@ -79,5 +79,7 @@
 
 (define-key global-map (kbd "M-w") 'quit-window)
 (define-key global-map (kbd "M-s") 'save-buffer)
+
+(define-key global-map (kbd "C-x c") 'comment-line)
 
 (provide 'basic-init)

@@ -2,16 +2,18 @@
 (menu-bar-mode 1)
 (tool-bar-mode 1)
 (scroll-bar-mode -1)
-;(set-window-scroll-bars (minibuffer-window) nil nil)
+;; (set-window-scroll-bars (minibuffer-window) nil nil)
+
+;; Mac OSX UI configs
+(and (eq system-type 'darwin)
+     ;; (add-to-list 'default-frame-alist '(ns-appearance . nil)) ; nil for dark text  
+     ;; (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+     (tool-bar-mode -1)
+     )
 
 ;; Initial frame size
 (add-to-list 'default-frame-alist '(height . 50))
 (add-to-list 'default-frame-alist '(width . 180))
-
-;; Transparent titlebar for mac osx
-;(and (eq system-type 'darwin)
-;  (add-to-list 'default-frame-alist '(ns-appearance . nil)) ; nil for dark text  
-;  (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t)))
 
 ;; Package config
 (require 'package)
