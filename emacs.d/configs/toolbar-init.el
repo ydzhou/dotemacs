@@ -8,7 +8,7 @@
 
 (defun custom-tool-bar--image-expression (icon)
   (let* (
-	 ;(xpm-spec (list :type 'xpm :file (concat icon ".xpm")))
+	 ;; (xpm-spec (list :type 'xpm :file (concat icon ".xpm")))
      (svg-spec (list :type 'svg :file (concat icon ".svg") :foreground "#303030"))
 	 (png-spec (list :type 'png :file (concat icon ".png"))))
     `(find-image ',(list svg-spec png-spec))))
@@ -31,23 +31,25 @@
               :help "About Emacs"
               :image ,(custom-tool-bar--image-expression "help")))
 
-;(define-key tool-bar-map [paste]
-;  `(menu-item "Paste" yank
-;              :enable t
-;              :help "Paste (yank) text most recently cut/copied"
-;              :image ,(find-image '((:type svg :file "paste.svg")))))
+(define-key tool-bar-map [separator-tools] menu-bar-separator)
 
-;(define-key tool-bar-map [copy]
-;  `(menu-item "Copy" ns-copy-including-secondary
-;              :enable mark-active
-;              :help "Copy text in region between mark and current position"
-;              :image ,(find-image '((:type svg :file "copy.svg")))))
+(define-key tool-bar-map [paste]
+ `(menu-item "Paste" yank
+             :enable t
+             :help "Paste (yank) text most recently cut/copied"
+             :image ,(find-image '((:type svg :file "paste.svg")))))
 
-;(define-key tool-bar-map [cut]
-;  `(menu-item "Cut" kill-region
-;              :enable (and mark-active (not buffer-read-only))
-;              :help "Cut (kill) text in region between mark and current position"
-;              :image ,(find-image '((:type svg :file "cut.svg")))))
+(define-key tool-bar-map [copy]
+ `(menu-item "Copy" ns-copy-including-secondary
+             :enable mark-active
+             :help "Copy text in region between mark and current position"
+             :image ,(find-image '((:type svg :file "copy.svg")))))
+
+(define-key tool-bar-map [cut]
+ `(menu-item "Cut" kill-region
+             :enable (and mark-active (not buffer-read-only))
+             :help "Cut (kill) text in region between mark and current position"
+             :image ,(find-image '((:type svg :file "cut.svg")))))
 
 (define-key tool-bar-map [undo-redo]
   `(menu-item "Redo" undo-redo
@@ -67,7 +69,7 @@
               :image ,(custom-tool-bar--image-expression "undo")))
 
 
-(define-key tool-bar-map [separator-edit] menu-bar-separator)
+(define-key tool-bar-map [separator-editing] menu-bar-separator)
 
 (define-key tool-bar-map [save-buffer]
   `(menu-item "Save" save-buffer
