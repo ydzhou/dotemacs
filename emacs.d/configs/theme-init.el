@@ -2,19 +2,19 @@
 
 ;; Main editor theme
 
-;;(use-package leuven-theme :ensure t :config (load-theme 'leuven t))
-;;(use-package gruvbox-theme :ensure t :config (load-theme 'gruvbox t))
-;;(use-package nord-theme :ensure t :config (load-theme 'nord t))
-;;(use-package solarized-theme :ensure t :config (load-theme 'solarized-light t))
-;;(use-package nimbus-theme :ensure t :config (load-theme 'nimbus t))
-;;(use-package dracula-theme :ensure t :config (load-theme 'dracula t))
+;; (use-package leuven-theme :ensure t :config (load-theme 'leuven t))
+;; (use-package gruvbox-theme :ensure t :config (load-theme 'gruvbox t))
+;; (use-package nord-theme :ensure t :config (load-theme 'nord t))
+;; (use-package solarized-theme :ensure t :config (load-theme 'solarized-light t))
+;; (use-package nimbus-theme :ensure t :config (load-theme 'nimbus t))
+;; (use-package dracula-theme :ensure t :config (load-theme 'dracula t))
 (use-package acme9-theme :config (load-theme 'acme9 t))
 ;; (use-package borland-classic-theme :config (load-theme 'borland-classic t))
-;;(load-theme 'deeper-blue t)
+;; (load-theme 'deeper-blue t)
 
 ;; Set background color
-;;(setq initial-frame-alist '((background-color . "#E3EDCD")))
-;;(setq default-frame-alist initial-frame-alist)
+;; (setq initial-frame-alist '((background-color . "#E3EDCD")))
+;; (setq default-frame-alist initial-frame-alist)
 
 ;; Set font
 (when (eq system-type 'darwin)

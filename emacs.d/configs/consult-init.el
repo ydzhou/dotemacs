@@ -9,7 +9,7 @@
          ("C-s" . consult-line))
   
   :hook (completion-list-mode . consult-preview-at-point-mode)
-    ;; The :init configuration is always executed (Not lazy)
+  ;; The :init configuration is always executed (Not lazy)
   :init
 
   ;; Optionally configure the register formatting. This improves the register

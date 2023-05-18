@@ -28,8 +28,8 @@
   (python-mode . lsp-deferred)
   (terraform-mode . lsp-deferred)
   (typescript-mode . lsp-deferred)
-  ;(c++-mode . 'lsp-deferred)
-  ;(c-mode . lsp-deferred)
+  ;; (c++-mode . 'lsp-deferred)
+  ;; (c-mode . lsp-deferred)
   )
   :config
   (setq lsp-idle-delay 0.500)
