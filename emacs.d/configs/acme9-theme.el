@@ -50,7 +50,7 @@
 
 ;;;;; mode-line
    `(mode-line                                    ((t (:foreground ,fg :background ,acme-cyan-light :box t))))
-   `(mode-line-inactive                           ((t (:foreground ,fg :background ,acme-yellow-gray :box t))))
+   `(mode-line-inactive                           ((t (:foreground ,fg :background ,acme-yellow-gray :box (:color "gray")))))
    `(mode-line-highlight                          ((t (:foreground ,fg :background ,acme-cyan))))
    `(mode-line-buffer-id                          ((t (:foreground ,fg :weight bold))))
 

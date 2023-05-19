@@ -25,10 +25,11 @@
   (defconst font-minor-height 120))
 
 (when (eq system-type 'gnu/linux)
-  (defconst fixed-pitch-font "M PLUS 1 Code" )
+  ;; (defconst fixed-pitch-font "M PLUS 1 Code" )
+  (defconst fixed-pitch-font "Monoid" )
   (defconst variable-pitch-font "Noto Sans")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 140)
+  (defconst font-height 120)
   (defconst font-minor-height 100))
 
 (set-face-attribute 'default nil :family fixed-pitch-font :height font-height)
