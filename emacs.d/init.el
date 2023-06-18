@@ -25,6 +25,7 @@
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
+;(require 'leetcode-init)
 (require 'misc-package-init)
 
 (custom-set-variables
