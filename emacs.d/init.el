@@ -22,10 +22,11 @@
 (require 'lsp-init)
 (require 'lang-init)
 (require 'company-init)
+
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
-;(require 'leetcode-init)
+(require 'leetcode-init)
 (require 'misc-package-init)
 
 (custom-set-variables

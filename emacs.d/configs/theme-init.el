@@ -4,13 +4,11 @@
 
 ;; (use-package leuven-theme :ensure t :config (load-theme 'leuven t))
 ;; (use-package gruvbox-theme :ensure t :config (load-theme 'gruvbox t))
-;; (use-package nord-theme :ensure t :config (load-theme 'nord t))
 ;; (use-package solarized-theme :ensure t :config (load-theme 'solarized-light t))
-;; (use-package nimbus-theme :ensure t :config (load-theme 'nimbus t))
 ;; (use-package dracula-theme :ensure t :config (load-theme 'dracula t))
-(use-package acme9-theme :config (load-theme 'acme9 t))
+(use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
+;; (use-package acme9-theme :config (load-theme 'acme9 t))
 ;; (use-package borland-classic-theme :config (load-theme 'borland-classic t))
-;; (load-theme 'deeper-blue t)
 
 ;; Set background color
 ;; (setq initial-frame-alist '((background-color . "#E3EDCD")))
@@ -21,16 +19,16 @@
   (defconst fixed-pitch-font "M PLUS 1 Code")
   (defconst variable-pitch-font ".AppleSystemUIFont")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 160)
-  (defconst font-minor-height 120))
+  (defconst font-height 180))
 
 (when (eq system-type 'gnu/linux)
   ;; (defconst fixed-pitch-font "M PLUS 1 Code" )
   (defconst fixed-pitch-font "Monoid" )
   (defconst variable-pitch-font "Noto Sans")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 120)
-  (defconst font-minor-height 100))
+  (defconst font-height 120))
+
+(defconst font-minor-height (- font-height 20))
 
 (set-face-attribute 'default nil :family fixed-pitch-font :height font-height)
 (set-face-attribute 'variable-pitch variable-pitch-font)
