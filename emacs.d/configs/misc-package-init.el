@@ -27,4 +27,11 @@
   :ensure t
   :custom (ement-notify-notification-predicates 'ement-notify--event-mentions-session-user-p))
 
+(use-package nov
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+  (setq nov-text-width t)
+  )
+
 (provide 'misc-package-init)

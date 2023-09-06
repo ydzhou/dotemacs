@@ -43,7 +43,7 @@
  '(custom-safe-themes
    '("59f7026ccc80fe6364ef049010c847a356896f688f242757f7ccd042a6d8f4fd" "2d0c343156093c69d9c4a5e2b59b0808dc6e7e4588a3750eca3d709eff180f87" default))
  '(package-selected-packages
-   '(leuven-theme lsp-ui lsp-mode use-package go-mode exec-path-from-shell company all-the-icons)))
+   '(nov leuven-theme lsp-ui lsp-mode use-package go-mode exec-path-from-shell company all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
