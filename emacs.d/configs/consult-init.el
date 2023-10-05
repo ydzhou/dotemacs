@@ -6,7 +6,7 @@
          ("M-g M-g" . consult-grep)
          ("M-g M-l" . consult-line)
          ("M-g M-f" . consult-find)
-         ("C-s" . consult-line))
+         ("M-f" . consult-line))
   
   :hook (completion-list-mode . consult-preview-at-point-mode)
   ;; The :init configuration is always executed (Not lazy)

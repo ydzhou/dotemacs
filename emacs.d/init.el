@@ -14,7 +14,7 @@
 
 (require 'modeline-init)
 (require 'menu-init)
-(require 'toolbar-init)
+;; (require 'toolbar-init)
 
 (require 'basic-init)
 (require 'treemacs-init)
@@ -26,7 +26,7 @@
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
-(require 'leetcode-init)
+
 (require 'misc-package-init)
 
 (custom-set-variables

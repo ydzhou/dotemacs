@@ -6,7 +6,8 @@
 ;; (use-package gruvbox-theme :ensure t :config (load-theme 'gruvbox t))
 ;; (use-package solarized-theme :ensure t :config (load-theme 'solarized-light t))
 ;; (use-package dracula-theme :ensure t :config (load-theme 'dracula t))
-(use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
+;; (use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
+(use-package ef-themes :ensure t :config (load-theme 'ef-light t))
 ;; (use-package acme9-theme :config (load-theme 'acme9 t))
 ;; (use-package borland-classic-theme :config (load-theme 'borland-classic t))
 

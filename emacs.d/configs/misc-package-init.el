@@ -9,8 +9,8 @@
   :config
   (setq
     recentf-save-file "~/.emacs.d/var/recentf"
-    recentf-max-saved-items 100
-    recentf-max-menu-items 50)
+    recentf-max-saved-items 20
+    recentf-max-menu-items 10)
   (recentf-mode 1)
   ;; (run-at-time nil (* 5 60) 'recentf-save-list)
   )
@@ -32,6 +32,14 @@
   :config
   (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
   (setq nov-text-width t)
+  )
+
+(use-package leetcode
+  :ensure t
+  :config
+  (setq leetcode-prefer-language "python3")
+  (setq leetcode-save-solutions t)
+  (setq leetcode-directory "~/Developer/lc/")
   )
 
 (provide 'misc-package-init)

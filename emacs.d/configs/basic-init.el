@@ -78,8 +78,15 @@
 (define-key global-map (kbd "M-v") 'yank)
 
 (define-key global-map (kbd "M-w") 'delete-window)
+
 (define-key global-map (kbd "M-s") 'save-buffer)
+(define-key global-map (kbd "M-z") 'undo)
+(define-key global-map (kbd "M-Z") 'undo-redo)
+(define-key global-map (kbd "M-a") 'mark-whole-buffer)
+(define-key global-map (kbd "M-'") 'scroll-down)
+(define-key global-map (kbd "M-;") 'scroll-up)
 
 (define-key global-map (kbd "C-x c") 'comment-line)
+(define-key global-map (kbd "M-/") 'comment-line)
 
 (provide 'basic-init)

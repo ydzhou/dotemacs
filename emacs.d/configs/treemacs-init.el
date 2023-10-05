@@ -27,7 +27,7 @@
     )
   :bind
   (:map global-map
-        ("C-x C-n" . treemacs))
+        ("C-x C-n". treemacs))
   (:map treemacs-mode-map
         ("<mouse-1>" . treemacs-single-click-expand-action))
   :hook
