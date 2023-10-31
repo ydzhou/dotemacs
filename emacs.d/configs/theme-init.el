@@ -9,7 +9,6 @@
 ;; (use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
 (use-package ef-themes :ensure t :config (load-theme 'ef-light t))
 ;; (use-package acme9-theme :config (load-theme 'acme9 t))
-;; (use-package borland-classic-theme :config (load-theme 'borland-classic t))
 
 ;; Set background color
 ;; (setq initial-frame-alist '((background-color . "#E3EDCD")))

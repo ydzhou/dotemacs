@@ -39,6 +39,6 @@
   :after (treemacs projectile)
   )
 
-(use-package treemacs-all-the-icons :ensure t)
+(use-package treemacs-all-the-icons :ensure t :if (display-graphic-p))
 
 (provide 'treemacs-init)

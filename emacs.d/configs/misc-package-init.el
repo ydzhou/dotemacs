@@ -32,6 +32,10 @@
   :config
   (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
   (setq nov-text-width t)
+  (defun custom-nov-font-setup()
+    (face-remap-add-relative 'variable-pitch :family "EB Garamond"
+                             :height 1.2))
+  (add-hook 'nov-mode-hook 'custom-nov-font-setup)
   )
 
 (use-package leetcode

@@ -1,5 +1,6 @@
 ;; EDITOR CONFIGS
 (add-to-list 'load-path "~/.emacs.d/configs/")
+(add-to-list 'load-path "~/.emacs.d/colors/")
 
 ;; Disable native-comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
