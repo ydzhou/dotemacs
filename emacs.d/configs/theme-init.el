@@ -22,8 +22,7 @@
   (defconst font-height 180))
 
 (when (eq system-type 'gnu/linux)
-  ;; (defconst fixed-pitch-font "M PLUS 1 Code" )
-  (defconst fixed-pitch-font "Monoid" )
+  (defconst fixed-pitch-font "DejaVu Sans Mono" )
   (defconst variable-pitch-font "Noto Sans")
   (defconst cjk-font "LXGW WenKai Mono")
   (defconst font-height 120))
