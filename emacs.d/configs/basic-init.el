@@ -77,7 +77,8 @@
 (define-key global-map (kbd "M-c") 'kill-ring-save)
 (define-key global-map (kbd "M-v") 'yank)
 
-(define-key global-map (kbd "M-w") 'delete-window)
+(define-key global-map (kbd "M-w") 'kill-this-buffer)
+(define-key global-map (kbd "M-h") 'delete-window)
 
 (define-key global-map (kbd "M-s") 'save-buffer)
 (define-key global-map (kbd "M-z") 'undo)
