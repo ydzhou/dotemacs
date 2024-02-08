@@ -7,12 +7,12 @@
 ;; (use-package solarized-theme :ensure t :config (load-theme 'solarized-light t))
 ;; (use-package dracula-theme :ensure t :config (load-theme 'dracula t))
 ;; (use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
-(use-package ef-themes :ensure t :config (load-theme 'ef-light t))
+;; (use-package ef-themes :ensure t :config (load-theme 'ef-light t))
 ;; (use-package acme9-theme :config (load-theme 'acme9 t))
 
 ;; Set background color
-;; (setq initial-frame-alist '((background-color . "#E3EDCD")))
-;; (setq default-frame-alist initial-frame-alist)
+(setq initial-frame-alist '((background-color . "#E3EDCD")))
+(setq default-frame-alist initial-frame-alist)
 
 ;; Set font
 (when (eq system-type 'darwin)
