@@ -23,10 +23,6 @@
         ("C-c p" . projectile-command-map))
   )
 
-(use-package ement
-  :ensure t
-  :custom (ement-notify-notification-predicates 'ement-notify--event-mentions-session-user-p))
-
 (use-package nov
   :ensure t
   :config
@@ -36,14 +32,6 @@
     (face-remap-add-relative 'variable-pitch :family "EB Garamond"
                              :height 1.2))
   (add-hook 'nov-mode-hook 'custom-nov-font-setup)
-  )
-
-(use-package leetcode
-  :ensure t
-  :config
-  (setq leetcode-prefer-language "python3")
-  (setq leetcode-save-solutions t)
-  (setq leetcode-directory "~/Developer/lc/")
   )
 
 (provide 'misc-package-init)
