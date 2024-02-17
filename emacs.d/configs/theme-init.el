@@ -16,10 +16,10 @@
 
 ;; Set font
 (when (eq system-type 'darwin)
-  (defconst fixed-pitch-font "M PLUS 1 Code")
+  (defconst fixed-pitch-font "Source Code Pro")
   (defconst variable-pitch-font ".AppleSystemUIFont")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 180))
+  (defconst font-height 160))
 
 (when (eq system-type 'gnu/linux)
   (defconst fixed-pitch-font "Source Code Pro" )

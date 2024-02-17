@@ -5,6 +5,9 @@
 (setq initial-major-mode 'org-mode)
 (setq inhibit-startup-screen t)
 
+;; Force redisplay without waiting for pending input events
+(setq redisplay-dont-pause t)
+
 ;; Display line number
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (setq-default display-line-numbers-width 3)
