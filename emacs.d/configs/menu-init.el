@@ -1,17 +1,3 @@
-(define-key prog-mode-map [menu-bar lsp]
-            (cons "LSP" (make-sparse-keymap "LSP")))
-(define-key prog-mode-map [menu-bar lsp find-references]
-            '("Find References" . lsp-find-references))
-(define-key prog-mode-map [menu-bar lsp find-implementation]
-            '("Find Implementation" . lsp-find-implementation))
-(define-key prog-mode-map [menu-bar lsp find-definition]
-            '("Find Definition" . lsp-find-definition))
-(define-key prog-mode-map [menu-bar lsp separator-lsp-addon] menu-bar-separator)
-(define-key prog-mode-map [menu-bar lsp list-all-errors]
-            '("List Errors" . lsp-treemacs-errors-list))
-(define-key prog-mode-map [menu-bar lsp imenu]
-            '("Show Imenu" . lsp-ui-imenu))
-
 (define-key global-map [menu-bar tools separator-consult] menu-bar-separator)
 (define-key global-map [menu-bar tools consult-grep]
             '("Consult Grep" . consult-grep))
