@@ -23,6 +23,12 @@
         ("C-c p" . projectile-command-map))
   )
 
+(use-package eldoc
+  :ensure t
+  :config
+  (setq eldoc-echo-area-use-multiline-p .3)
+  )
+
 (use-package nov
   :ensure t
   :config

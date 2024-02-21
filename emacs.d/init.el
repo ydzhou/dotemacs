@@ -19,7 +19,7 @@
 (require 'basic-init)
 (require 'treemacs-init)
 (require 'flycheck-init)
-(require 'lsp-init)
+(require 'eglot-init)
 (require 'lang-init)
 (require 'company-init)
 
