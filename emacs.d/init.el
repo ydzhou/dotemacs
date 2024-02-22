@@ -21,11 +21,11 @@
 (require 'flycheck-init)
 (require 'eglot-init)
 (require 'lang-init)
-(require 'company-init)
 
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
+(require 'corfu-init)
 
 (require 'misc-package-init)
 
