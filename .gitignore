@@ -1,6 +1,1 @@
-/emacs.d/backup/*
-!/emacs.d/backup/DUMMY
-/emacs.d/eln-cache
-/emacs.d/elpa
-/emacs.d/var
-/emacs.d/auto-save-list
+./emacs.d/config/custom.el
