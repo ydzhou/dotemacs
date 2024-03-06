@@ -3,12 +3,12 @@
 (use-package go-mode
   :ensure t
   :config
-  ;; Set up before-save hooks to format buffer and add/delete imports.
-  ;; Make sure you don't have other gofmt/goimports hooks enabled.
-  (defun lsp-go-install-save-hooks ()
-    (add-hook 'before-save-hook #'lsp-format-buffer t t)
-    (add-hook 'before-save-hook #'lsp-organize-imports t t))
-  (add-hook 'go-mode-hook #'lsp-go-install-save-hooks))
+  (setq gofmt-command "goimports")
+  (defun go-save-hooks ()
+    (add-hook 'before-save-hook 'gofmt-before-save))
+  :hook
+  (go-mode . go-save-hooks)
+  )
 
 (use-package terraform-mode
   :ensure t

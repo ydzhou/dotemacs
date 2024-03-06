@@ -1,3 +1,7 @@
+;; Performance tuning
+(setq gc-cons-threshold (* 1024 1024 1024 4)) ;; 4 GiB
+(setq read-process-output-max (* 1024 1024 128)) ;; 128 MiB
+
 ;; EDITOR CONFIGS
 (add-to-list 'load-path "~/.emacs.d/configs/")
 (add-to-list 'load-path "~/.emacs.d/colors/")

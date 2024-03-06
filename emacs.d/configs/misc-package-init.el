@@ -15,6 +15,10 @@
   ;; (run-at-time nil (* 5 60) 'recentf-save-list)
   )
 
+(use-package dired
+  :config
+  (setq dired-kill-when-opening-new-dired-buffer t))
+
 (use-package projectile
   :ensure t
   :init (projectile-mode +1)

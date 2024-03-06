@@ -50,10 +50,6 @@
 ;; Backup
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
 
-;; Performance tuning
-(setq gc-cons-threshold 100000000) ;; 100MB
-(setq read-process-output-max (* 1024 1024)) ;; 1MB
-
 ;; Smooth scrolling
 (if (version<= emacs-version "29.0")
   (setq pixel-scroll-precision-use-momentum 't)
