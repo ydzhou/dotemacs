@@ -6,17 +6,6 @@
         (treemacs)))
     map))
 
-(setq mode-line-end-spaces
-      '(""
-        (vc-mode vc-mode)
-        mode-line-modes
-        mode-line-misc-info
-        ))
-
-(defun custom-mode-line--separator ()
-  (let ((r-length (length (format-mode-line mode-line-end-spaces))))
-    (propertize " " 'display `(space :align-to (- right ,r-length)))))
-
 (setq-default mode-line-format
       '(
        (:eval (propertize (propertize (all-the-icons-faicon "bars")
@@ -32,8 +21,9 @@
        mode-line-buffer-identification
        "  "
        mode-line-position
-       (:eval (custom-mode-line--separator))
-       mode-line-end-spaces
+       "      "
+       (vc-mode vc-mode)
+       mode-line-modes
        ))
 
 (provide 'modeline-init)

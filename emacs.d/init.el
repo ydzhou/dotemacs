@@ -27,12 +27,14 @@
 (require 'basic-init)
 (require 'treemacs-init)
 (require 'flycheck-init)
-(require 'eglot-init)
+;; (require 'eglot-init)
+(require 'lsp-init)
 (require 'lang-init)
 
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
-(require 'corfu-init)
+;; (require 'corfu-init)
+(require 'company-init)
 
 (require 'misc-package-init)

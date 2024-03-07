@@ -3,8 +3,8 @@
 ;; Main editor theme
 
 ;; (use-package leuven-theme :ensure t :config (load-theme 'leuven t))
-(use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
-;; (use-package ef-themes :ensure t :config (load-theme 'ef-light t))
+;; (use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
+(use-package ef-themes :ensure t :config (load-theme 'ef-elea-light t))
 ;; (use-package acme9-theme :config (load-theme 'acme9 t))
 
 ;; Set background color
@@ -16,7 +16,7 @@
   (defconst fixed-pitch-font "Source Code Pro")
   (defconst variable-pitch-font ".AppleSystemUIFont")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 160))
+  (defconst font-height 150))
 
 (when (eq system-type 'gnu/linux)
   (defconst fixed-pitch-font "Source Code Pro" )
