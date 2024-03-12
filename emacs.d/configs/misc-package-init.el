@@ -17,14 +17,16 @@
 
 (use-package dired
   :config
+  (define-key dired-mode-map (kbd "<mouse-2>") 'dired-find-file)
+  (define-key dired-mode-map (kbd "RET") 'dired-find-file)
+  (setq dired-recursive-deletes 'top)
   (setq dired-kill-when-opening-new-dired-buffer t))
 
-(use-package projectile
+(use-package all-the-icons-dired
+  :if (display-graphic-p)
   :ensure t
-  :init (projectile-mode +1)
-  :bind (:map projectile-mode-map
-        ("M-p" . projectile-command-map)
-        ("C-c p" . projectile-command-map))
+  :hook (dired-mode . all-the-icons-dired-mode)
+  :custom (all-the-icons-dired-monochrome nil)
   )
 
 (use-package eldoc

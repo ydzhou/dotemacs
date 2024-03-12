@@ -20,6 +20,7 @@
           treemacs-width 35)
     ; (treemacs-resize-icons 44)
     (treemacs-follow-mode t)
+    (treemacs-project-follow-mode t)
     (treemacs-filewatch-mode t)
     (when (display-graphic-p)
       (setq treemacs-text-scale -1)
@@ -32,11 +33,6 @@
         ("<mouse-1>" . treemacs-single-click-expand-action))
   :hook
   (when (display-graphic-p) (treemacs-mode . variable-pitch-mode))
-  )
-
-(use-package treemacs-projectile
-  :ensure t
-  :after (treemacs projectile)
   )
 
 (use-package treemacs-all-the-icons :ensure t :if (display-graphic-p))

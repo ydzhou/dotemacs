@@ -5,6 +5,7 @@
 (use-package lsp-mode
   :ensure t
   :custom
+  (lsp-log-io t)
   (lsp-completion-show-detail t)
   (lsp-completion-show-kind t)
   (lsp-eldoc-render-all nil)
@@ -18,9 +19,9 @@
   (lsp-lens-enable t)
   (lsp-lens-place-position 'above-line)
   ;; modeline
-  (lsp-modeline-code-actions-enable t)
+  (lsp-modeline-code-actions-enable nil)
   (lsp-modeline-diagnostics-enable t)
-  (lsp-modeline-workspace-status-enable t)
+  (lsp-modeline-workspace-status-enable nil)
   ;; lsp-ui
   (lsp-ui-doc-delay 2)
   (lsp-ui-sideline-show-diagnostics nil)

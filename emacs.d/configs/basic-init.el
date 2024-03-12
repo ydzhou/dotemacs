@@ -47,6 +47,9 @@
 (setq auto-revert-use-notify nil)
 (global-auto-revert-mode)
 
+;; Auto save
+(setq auto-save-list-file-prefix "~/.emacs.d/backup/")
+
 ;; Backup
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
 
