@@ -28,7 +28,8 @@
 (require 'treemacs-init)
 (require 'flycheck-init)
 ;; (require 'eglot-init)
-(require 'lsp-init)
+;; (require 'lsp-init)
+(require 'lsp-bridge-init)
 (require 'lang-init)
 
 (require 'vertico-init)

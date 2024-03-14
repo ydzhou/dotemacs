@@ -35,6 +35,15 @@
   (setq eldoc-echo-area-use-multiline-p .3)
   )
 
+(use-package project
+  :custom
+  (project-switch-commands
+   '((project-dired "Dired" "d")
+     (project-find-file "Find file")
+     (project-display-buffer-other-frame "Display buffer" "b")
+     (project-eshell "Eshell")))
+  )
+
 (use-package nov
   :ensure t
   :config
