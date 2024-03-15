@@ -6,6 +6,13 @@
 (add-to-list 'load-path "~/.emacs.d/configs/")
 (add-to-list 'load-path "~/.emacs.d/colors/")
 
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (when (memq window-system '(mac ns x))
+    (exec-path-from-shell-initialize))
+  )
+
 ;; Disable native-comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
 (setq package-native-compile t)
@@ -25,15 +32,19 @@
 (require 'menu-init)
 
 (require 'basic-init)
+(require 'key-map-init)
+
 (require 'treemacs-init)
+
 (require 'eglot-init)
 ;; (require 'lsp-bridge-init)
 (require 'lang-init)
 
+;; (require 'corfu-init)
+(require 'company-init)
+
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
-;; (require 'corfu-init)
-(require 'company-init)
 
 (require 'misc-package-init)

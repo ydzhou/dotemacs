@@ -8,7 +8,7 @@
   (c++-mode . eglot-ensure)
   :config
   (setq eglot-events-buffer-size 0
-        eglot-sync-connect nil
+        eglot-sync-connect 2
         eglot-autoshutdown t)
   )
 

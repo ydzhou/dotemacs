@@ -1,10 +1,6 @@
 ;; Aditional Packages
 (use-package no-littering :ensure t)
 
-(use-package exec-path-from-shell :ensure t)
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
-
 (use-package recentf
   :config
   (setq
@@ -43,6 +39,8 @@
      (project-display-buffer-other-frame "Display buffer" "b")
      (project-eshell "Eshell")))
   )
+
+(use-package vterm :ensure t)
 
 (use-package nov
   :ensure t

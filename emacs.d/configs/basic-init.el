@@ -5,9 +5,6 @@
 (setq initial-major-mode 'org-mode)
 (setq inhibit-startup-screen t)
 
-;; Force redisplay without waiting for pending input events
-(setq redisplay-dont-pause t)
-
 ;; Display line number
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 (setq-default display-line-numbers-width 3)
@@ -49,6 +46,7 @@
 
 ;; Auto save
 (setq auto-save-list-file-prefix "~/.emacs.d/backup/")
+(setq auto-save-file-name-transforms `((".*" "~/.emacs.d/backup/" t)))
 
 ;; Backup
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
@@ -74,22 +72,5 @@
 (if (eq system-type 'gnu/linux)
   (setq x-super-keysym 'meta)
   )
-
-;; Custom keys for common operations
-(define-key global-map (kbd "M-c") 'kill-ring-save)
-(define-key global-map (kbd "M-v") 'yank)
-
-(define-key global-map (kbd "M-w") 'kill-this-buffer)
-(define-key global-map (kbd "M-h") 'delete-other-windows)
-
-(define-key global-map (kbd "M-s") 'save-buffer)
-(define-key global-map (kbd "M-z") 'undo)
-(define-key global-map (kbd "M-Z") 'undo-redo)
-(define-key global-map (kbd "M-a") 'mark-whole-buffer)
-(define-key global-map (kbd "M-'") 'scroll-down)
-(define-key global-map (kbd "M-;") 'scroll-up)
-
-(define-key global-map (kbd "C-x c") 'comment-line)
-(define-key global-map (kbd "M-/") 'comment-line)
 
 (provide 'basic-init)

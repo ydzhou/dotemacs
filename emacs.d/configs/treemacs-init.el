@@ -18,10 +18,10 @@
           treemacs-sorting 'alphabetic-asc
           treemacs-wide-toggle-width 70
           treemacs-width 35)
-    ; (treemacs-resize-icons 44)
     (treemacs-follow-mode t)
     (treemacs-project-follow-mode t)
     (treemacs-filewatch-mode t)
+    (treemacs-git-mode -1)
     (when (display-graphic-p)
       (setq treemacs-text-scale -1)
       (treemacs-load-theme "all-the-icons"))

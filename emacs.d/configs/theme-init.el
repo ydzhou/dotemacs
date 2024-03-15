@@ -4,7 +4,9 @@
 
 ;; (use-package leuven-theme :ensure t :config (load-theme 'leuven t))
 ;; (use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
-(use-package ef-themes :ensure t :config (load-theme 'ef-elea-light t))
+(use-package ef-themes :ensure t :config (load-theme 'ef-frost t))
+;; (use-package nord-theme :ensure t :config (load-theme 'nord t))
+;; (use-package kanagawa-theme :ensure t :config (load-theme 'kanagawa t))
 ;; (use-package acme9-theme :config (load-theme 'acme9 t))
 
 ;; Set background color
@@ -49,6 +51,5 @@
 (set-face-attribute 'tab-line-tab-inactive nil :inherit 'mode-line-inactive :background 'unspecified :foreground 'unspecified)
 (set-face-attribute 'tab-line-tab-current nil :inherit 'mode-line :background 'unspecified :foreground 'unspecified :weight 'semi-bold :box nil)
 (set-face-attribute 'tab-line-highlight nil :inherit 'mode-line-highlight :background 'unspecified :foreground 'unspecified :box 'unspecified)
-
 
 (provide 'theme-init)
