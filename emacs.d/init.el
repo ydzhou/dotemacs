@@ -26,7 +26,6 @@
 
 (require 'basic-init)
 (require 'treemacs-init)
-(require 'flycheck-init)
 (require 'eglot-init)
 ;; (require 'lsp-bridge-init)
 (require 'lang-init)
