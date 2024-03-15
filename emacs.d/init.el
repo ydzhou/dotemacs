@@ -1,6 +1,6 @@
 ;; Performance tuning
-(setq gc-cons-threshold (* 1024 1024 1024 4)) ;; 4 GiB
-(setq read-process-output-max (* 1024 1024 128)) ;; 128 MiB
+(setq gc-cons-threshold (* 1024 1024 1024 2)) ;; 4 GiB
+(setq read-process-output-max (* 1024 1024 64)) ;; 128 MiB
 
 ;; EDITOR CONFIGS
 (add-to-list 'load-path "~/.emacs.d/configs/")
@@ -27,9 +27,8 @@
 (require 'basic-init)
 (require 'treemacs-init)
 (require 'flycheck-init)
-;; (require 'eglot-init)
-;; (require 'lsp-init)
-(require 'lsp-bridge-init)
+(require 'eglot-init)
+;; (require 'lsp-bridge-init)
 (require 'lang-init)
 
 (require 'vertico-init)
