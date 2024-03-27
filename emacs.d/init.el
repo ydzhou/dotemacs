@@ -1,5 +1,5 @@
 ;; Performance tuning
-(setq gc-cons-threshold (* 1024 1024 1024 2)) ;; 4 GiB
+(setq gc-cons-threshold (* 1024 1024 1024 2)) ;; 2 GiB
 (setq read-process-output-max (* 1024 1024 64)) ;; 128 MiB
 
 ;; EDITOR CONFIGS
@@ -13,6 +13,8 @@
     (exec-path-from-shell-initialize))
   )
 
+(use-package all-the-icons :if (display-graphic-p))
+
 ;; Disable native-comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
 (setq package-native-compile t)
@@ -24,8 +26,6 @@
 (setq custom-file (expand-file-name "configs/custom.el" user-emacs-directory))
 (load custom-file)
 
-(use-package all-the-icons :ensure t :if (display-graphic-p))
-
 (require 'theme-init)
 
 (require 'modeline-init)
@@ -35,6 +35,7 @@
 (require 'key-map-init)
 
 (require 'treemacs-init)
+;; (require 'dired-sidebar-init)
 
 (require 'eglot-init)
 ;; (require 'lsp-bridge-init)

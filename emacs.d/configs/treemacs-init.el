@@ -21,10 +21,10 @@
     (treemacs-follow-mode t)
     (treemacs-project-follow-mode t)
     (treemacs-filewatch-mode t)
-    (treemacs-git-mode -1)
     (when (display-graphic-p)
       (setq treemacs-text-scale -1)
-      (treemacs-load-theme "all-the-icons"))
+      (treemacs-load-theme "all-the-icons")
+      )
     )
   :bind
   (:map global-map

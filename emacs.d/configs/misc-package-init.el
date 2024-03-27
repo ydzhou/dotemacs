@@ -18,13 +18,6 @@
   (setq dired-recursive-deletes 'top)
   (setq dired-kill-when-opening-new-dired-buffer t))
 
-(use-package all-the-icons-dired
-  :if (display-graphic-p)
-  :ensure t
-  :hook (dired-mode . all-the-icons-dired-mode)
-  :custom (all-the-icons-dired-monochrome nil)
-  )
-
 (use-package eldoc
   :ensure t
   :config
