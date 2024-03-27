@@ -7,7 +7,8 @@
     (define-key winum-keymap (kbd "C-x C-n") #'treemacs-select-window))
   :config
   (progn
-    (setq treemacs-display-in-side-window t
+    (setq treemacs-collapse-dirs 0
+          treemacs-display-in-side-window t
           treemacs-follow-after-init t
           treemacs-expand-after-init t
           treemacs-indentation 2
@@ -19,12 +20,13 @@
           treemacs-wide-toggle-width 70
           treemacs-width 35)
     (treemacs-follow-mode t)
-    (treemacs-project-follow-mode t)
     (treemacs-filewatch-mode t)
     (treemacs-git-mode -1)
+    (treemacs-project-follow-mode t)
     (when (display-graphic-p)
       (setq treemacs-text-scale -1)
-      (treemacs-load-theme "all-the-icons"))
+      (treemacs-load-theme "all-the-icons")
+      )
     )
   :bind
   (:map global-map

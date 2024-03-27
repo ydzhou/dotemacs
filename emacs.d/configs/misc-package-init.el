@@ -16,13 +16,9 @@
   (define-key dired-mode-map (kbd "<mouse-2>") 'dired-find-file)
   (define-key dired-mode-map (kbd "RET") 'dired-find-file)
   (setq dired-recursive-deletes 'top)
-  (setq dired-kill-when-opening-new-dired-buffer t))
-
-(use-package all-the-icons-dired
-  :if (display-graphic-p)
-  :ensure t
-  :hook (dired-mode . all-the-icons-dired-mode)
-  :custom (all-the-icons-dired-monochrome nil)
+  (setq dired-kill-when-opening-new-dired-buffer t)
+  (setq ls-lisp-dirs-first t)
+  (setq ls-lisp-use-insert-directory-program nil)
   )
 
 (use-package eldoc
@@ -36,8 +32,7 @@
   (project-switch-commands
    '((project-dired "Dired" "d")
      (project-find-file "Find file")
-     (project-display-buffer-other-frame "Display buffer" "b")
-     (project-eshell "Eshell")))
+     (project-display-buffer-other-frame "Display buffer" "b")))
   )
 
 (use-package vterm :ensure t)

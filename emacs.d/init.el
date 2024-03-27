@@ -1,17 +1,14 @@
 ;; Performance tuning
-(setq gc-cons-threshold (* 1024 1024 1024 2)) ;; 4 GiB
-(setq read-process-output-max (* 1024 1024 64)) ;; 128 MiB
+(setq gc-cons-threshold (* 1024 1024 1024 4)) ;; 4 GiB
+(setq read-process-output-max (* 1024 64)) ;; 64 KiB
 
 ;; EDITOR CONFIGS
 (add-to-list 'load-path "~/.emacs.d/configs/")
 (add-to-list 'load-path "~/.emacs.d/colors/")
 
-(use-package exec-path-from-shell
-  :ensure t
-  :config
-  (when (memq window-system '(mac ns x))
-    (exec-path-from-shell-initialize))
-  )
+(require 'env-init)
+
+(use-package all-the-icons :if (display-graphic-p))
 
 ;; Disable native-comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
@@ -23,8 +20,6 @@
 ;; Move custom settings to a separate file
 (setq custom-file (expand-file-name "configs/custom.el" user-emacs-directory))
 (load custom-file)
-
-(use-package all-the-icons :ensure t :if (display-graphic-p))
 
 (require 'theme-init)
 

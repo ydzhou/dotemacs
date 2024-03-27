@@ -44,8 +44,11 @@
 ;; Set cursor shape
 (setq-default cursor-type '(bar . 4))
 
-;; Customize tab line
+;; Set tab line mode
 (global-tab-line-mode 1)
+;; Disable tab line in below modes
+(setq tab-line-exclude-modes '(completion-list-mode help-mode dired-sidebar-mode treemacs-mode))
+;; Customize tab line
 (set-face-attribute 'tab-line nil :inherit 'mode-line-inactive :background 'unspecified :foreground 'unspecified :height 1.0 :box nil)
 (set-face-attribute 'tab-line-tab nil :inherit 'tab-line :background 'unspecified :foreground "black" :box nil)
 (set-face-attribute 'tab-line-tab-inactive nil :inherit 'mode-line-inactive :background 'unspecified :foreground 'unspecified)
