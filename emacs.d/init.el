@@ -8,8 +8,6 @@
 
 (require 'env-init)
 
-(use-package all-the-icons :if (display-graphic-p))
-
 ;; Disable native-comp warnings
 (setq native-comp-async-report-warnings-errors 'silent)
 (setq package-native-compile t)
@@ -18,18 +16,13 @@
 (set-language-environment "UTF-8")
 
 ;; Move custom settings to a separate file
-(setq custom-file (expand-file-name "configs/custom.el" user-emacs-directory))
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
 
-(require 'theme-init)
-
-(require 'modeline-init)
 (require 'menu-init)
 
 (require 'basic-init)
 (require 'key-map-init)
-
-(require 'treemacs-init)
 
 (require 'eglot-init)
 ;; (require 'lsp-bridge-init)
@@ -41,5 +34,9 @@
 (require 'vertico-init)
 (require 'consult-init)
 (require 'orderless-init)
+
+(require 'treemacs-init)
+
+(require 'graphic-init)
 
 (require 'misc-package-init)

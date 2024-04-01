@@ -40,6 +40,9 @@
 ;; Context menu
 ;;(context-menu-mode)
 
+;; Terminal mouse support
+(xterm-mouse-mode t)
+
 ;; Auto revert/refresh file when change detected
 (setq auto-revert-use-notify nil)
 (global-auto-revert-mode)
@@ -55,11 +58,6 @@
 (if (version<= emacs-version "29.0")
   (setq pixel-scroll-precision-use-momentum 't)
   (pixel-scroll-precision-mode 1))
-
-;; Enable mouse support
-;; Alternative: gpm-mouse-mode
-(unless (display-graphic-p)
-  (xterm-mouse-mode 1))
 
 ;; Select then pressing any key will remove selected text
 (delete-selection-mode 1)

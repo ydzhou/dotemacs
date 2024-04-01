@@ -1,14 +1,10 @@
-(add-to-list 'exec-path "/usr/bin")
-(add-to-list 'exec-path "/usr/local/bin")
-
-(if (eq system-type 'darwin)
-    (add-to-list 'exec-path "/opt/homebrew/bin")
+(use-package exec-path-from-shell
+  :ensure t
+  :init
+  (when (memq window-system '(mac ns x))
+    (exec-path-from-shell-initialize))
+  (when (daemonp)
+    (exec-path-from-shell-initialize))
   )
-
-(if (eq system-type 'gnu/linux)
-    (add-to-list 'exec-path "/home/linuxbrew/.linuxbrew/bin")
-  )
-
-(add-to-list 'exec-path "~/bin")
 
 (provide 'env-init)
