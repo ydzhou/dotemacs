@@ -19,6 +19,8 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
 
+(use-package nerd-icons :ensure t :custom (nerd-icons-color-icons nil))
+
 (require 'menu-init)
 
 (require 'basic-init)

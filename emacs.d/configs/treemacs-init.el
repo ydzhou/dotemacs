@@ -14,14 +14,18 @@
          treemacs-indentation-string " "
          treemacs-position 'left
          treemacs-max-git-entries 5000
+         treemacs-no-png-images t
          treemacs-show-hidden-files nil
          treemacs-silent-refresh t
          treemacs-sorting 'alphabetic-asc
+         ;; treemacs-user-mode-line-format 'none
          treemacs-wide-toggle-width 70
          treemacs-width 35)
   (treemacs-follow-mode t)
   (treemacs-filewatch-mode t)
   (treemacs-project-follow-mode t)
+  (treemacs-git-mode 'simple)
+  (setq nerd-icons-color-icons nil)
   (treemacs-load-theme "nerd-icons")
   :bind
   (:map global-map

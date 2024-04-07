@@ -3,30 +3,26 @@
 ;; Main editor theme
 
 ;; (use-package leuven-theme :ensure t :config (load-theme 'leuven t))
-;; (use-package kaolin-themes :ensure t :config (load-theme 'kaolin-ocean t) (kaolin-treemacs-theme))
-(use-package ef-themes :ensure t :config (load-theme 'ef-frost t))
-;; (use-package nord-theme :ensure t :config (load-theme 'nord t))
+;; (use-package ef-themes :ensure t :config (load-theme 'ef-frost t))
 ;; (use-package kanagawa-theme :ensure t :config (load-theme 'kanagawa t))
-;; (use-package acme9-theme :config (load-theme 'acme9 t))
-
-;; Set background color
-;; (setq initial-frame-alist '((background-color . "#E3EDCD")))
-;; (setq default-frame-alist initial-frame-alist)
+(use-package acme9-theme :config (load-theme 'acme9 t))
+;; (use-package far-theme :config (load-theme 'far t))
+;; (use-package far-light-theme :config (load-theme 'far-light t))
 
 ;; Set font
 (when (eq system-type 'darwin)
-  (defconst fixed-pitch-font "Source Code Pro")
+  (defconst fixed-pitch-font "DejaVu Sans Mono")
   (defconst variable-pitch-font ".AppleSystemUIFont")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 150))
+  (defconst font-height 140))
 
 (when (eq system-type 'gnu/linux)
-  (defconst fixed-pitch-font "Source Code Pro" )
+  (defconst fixed-pitch-font "DejaVu Sans Mono" )
   (defconst variable-pitch-font "Noto Sans")
   (defconst cjk-font "LXGW WenKai Mono")
-  (defconst font-height 120))
+  (defconst font-height 110))
 
-(defconst font-minor-height (- font-height 30))
+(defconst font-minor-height (- font-height 20))
 
 (set-face-attribute 'default nil :family fixed-pitch-font :height font-height)
 (set-face-attribute 'variable-pitch variable-pitch-font)
@@ -54,7 +50,6 @@
 
 (setq-default mode-line-format
               '(
-                " "
                 (:eval (propertize
                         (propertize (nerd-icons-mdicon "nf-md-file_tree") 'mouse-face 'mode-line-highlight 'display '(raise -0.1))
                         'local-map mode-line-toggle-treemacs-map))

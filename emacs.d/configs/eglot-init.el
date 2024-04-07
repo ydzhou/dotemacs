@@ -12,4 +12,10 @@
         eglot-autoshutdown t)
   )
 
+;; (use-package eglot-booster
+;;   :after eglot
+;;   :config
+;;   (eglot-booster-mode)
+;;   )
+
 (provide 'eglot-init)

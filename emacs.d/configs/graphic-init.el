@@ -1,5 +1,3 @@
-(use-package nerd-icons :ensure t)
-
 (defun frame-init (frame)
   (require 'theme-init)
   (when (display-graphic-p frame)

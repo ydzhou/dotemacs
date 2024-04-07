@@ -17,7 +17,8 @@
 
 (defun custom-treemacs-nerd-icon ()
   (dolist (face '(treemacs-nerd-icons-root-face treemacs-nerd-icons-file-face))
-    (set-face-attribute face nil :height font-minor-height)
+    ;; (set-face-attribute face nil :height font-minor-height)
+    (set-face-attribute face nil :inherit 'nerd-icons-silver)
     )
   )
 
