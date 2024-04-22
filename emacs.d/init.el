@@ -41,4 +41,6 @@
 
 (require 'graphic-init)
 
+(require 'dashboard-init)
+
 (require 'misc-package-init)

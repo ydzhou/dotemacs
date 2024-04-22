@@ -35,8 +35,6 @@
      (project-display-buffer-other-frame "Display buffer" "b")))
   )
 
-(use-package vterm :ensure t)
-
 (use-package nov
   :ensure t
   :config
