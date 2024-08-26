@@ -3,7 +3,7 @@
   ("M-c" . kill-ring-save)
   ("M-v" . yank)
 
-  ("M-w" . kill-this-buffer)
+  ("M-w" . kill-buffer-and-window)
   ("M-h" . delete-other-windows)
 
   ("M-s" . save-buffer)
