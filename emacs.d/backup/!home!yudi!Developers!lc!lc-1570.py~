@@ -1,0 +1,5 @@
+class SparseVector:
+    def __init__(self, nums: List[int]):
+        
+        
+    def dotProduct(self, other):

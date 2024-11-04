@@ -1,0 +1,2 @@
+;;   -*- mode: lisp-data; -*-
+((:container ((elisp org-element--headline-cache) (elisp org-element--cache) (version "2.3")) :persist-file "04/81a23b-f731-460d-bd86-03c39f2a0b45" :associated (:hash "b1a98b1d8e5fa3afab3dafa1ffc71d7c" :file "/home/yudi/.emacs.d/var/treemacs/persist.org" :inode 1335329) :expiry 30 :last-access 1731307940.7722118 :last-access-hr "2024-11-10T22:52:20-0800") (:container ((index "3.2")) :persist-file "91/6ede00-d219-4785-a785-3eca947ab8f5" :associated nil :expiry never :last-access 1731308149.5317833 :last-access-hr "2024-11-10T22:55:49-0800"))

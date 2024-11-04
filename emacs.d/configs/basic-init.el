@@ -2,7 +2,7 @@
 
 ;; Initial page customization
 (setq initial-scratch-message nil)
-(setq initial-major-mode 'org-mode)
+(setq initial-major-mode 'text-mode)
 (setq inhibit-startup-screen t)
 
 ;; Display line number
@@ -55,9 +55,9 @@
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
 
 ;; Smooth scrolling
-(if (version<= emacs-version "29.0")
-  (setq pixel-scroll-precision-use-momentum 't)
-  (pixel-scroll-precision-mode 1))
+;; (if (version<= emacs-version "29.0")
+;;   (setq pixel-scroll-precision-use-momentum 't)
+;;   (pixel-scroll-precision-mode 1))
 
 ;; Select then pressing any key will remove selected text
 (delete-selection-mode 1)

@@ -1,0 +1,24 @@
+def minimumRemoveToMakeValidParentheses(s: str) -> str:
+    stk: List[int] = []
+
+    remove: List[int] = []
+    for i in range(len(s)):
+        c = s[i]
+        if c == '(':
+            stk.append(i)
+        elif c == ')':
+            if len(stk) > 0:
+                stk.pop(-1)
+            else:
+                remove.append(i)
+
+    remove.extend(stk)
+    remove.sort()
+
+    res = ""
+    for i in range(len(s)):
+        if i in remove:
+            continue
+        res += s[i]
+
+    return res

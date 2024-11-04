@@ -1,0 +1,18 @@
+def isValidWordAbbreviation(word, abbr: str) -> bool:
+    i, j, k = 0, 0, 0
+
+    while i < len(word) or j < len(abbr):
+        if abbr[j].isdigit():
+            if abbr[j] == '0' and k == 0:
+                return False
+            k = k * 10 + int(abbr[j])
+        else:
+            while k > 0:
+                i += 1
+                k -= 1
+            if word[i] != abbr[j]:
+                return False
+            i += 1
+        j += 1
+
+    return True

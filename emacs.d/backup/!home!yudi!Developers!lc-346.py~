@@ -1,0 +1,20 @@
+from typing import List
+
+class MovingAverage:
+    def __int__(self, size: int):
+        self.size = size
+        self.q: List[int] = []
+
+    def next(self, val: int) -> int:
+        self.q.append(val)
+
+        if len(self.q) > self.size:
+            self.q.pop(0)
+
+        return sum(self.q) // self.size
+
+ma = MovingAverage(3)
+print(ma.next(1))
+print(ma.next(10))
+print(ma.next(3))
+print(ma.next(5))
