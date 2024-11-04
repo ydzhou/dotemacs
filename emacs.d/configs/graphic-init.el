@@ -1,9 +1,7 @@
 (defun frame-init (frame)
+  (require 'font-init)
   (require 'theme-init)
-  (when (display-graphic-p frame)
-    (message "graphic mode on")
-    (require 'treemacs-graphic-init)
-    )
+  (when (display-graphic-p frame)(require 'treemacs-graphic-init))
   )
 
 (mapc 'frame-init (frame-list))

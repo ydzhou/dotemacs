@@ -27,10 +27,10 @@
   :config
   (custom-treemacs-fonts)
   ;; (custom-treemacs-nerd-icon)
-  (add-hook 'treemacs-mode-hook
-            (lambda ()
-              (when (display-graphic-p) (text-scale-increase -1))
-              ))
+  ;; (add-hook 'treemacs-mode-hook
+  ;;           (lambda ()
+  ;;             (when (display-graphic-p) (text-scale-increase -1))
+  ;;             ))
   )
 
 (provide 'treemacs-graphic-init)

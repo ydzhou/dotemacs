@@ -7,12 +7,12 @@ CXX=g++
 
 ./autogen.sh
 ./configure --with-mailutils \
+            --with-modules \
             --with-imagemagick \
-            --with-json \
             --with-native-compilation=aot \
             --with-tree-sitter \
             --with-xwidgets \
-            --with-ns \
+            --with-pgtk \
             --prefix=$EMACS_PREFIX
 
 #make -j${nproc}

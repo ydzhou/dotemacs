@@ -27,7 +27,6 @@
 (require 'key-map-init)
 
 (require 'eglot-init)
-;; (require 'lsp-bridge-init)
 (require 'lang-init)
 
 ;; (require 'corfu-init)
@@ -41,6 +40,6 @@
 
 (require 'graphic-init)
 
-(require 'dashboard-init)
+;; (require 'dashboard-init)
 
 (require 'misc-package-init)
